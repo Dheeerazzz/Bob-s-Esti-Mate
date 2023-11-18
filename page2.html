@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Blueberry&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Blueberry', Comicsans;
+      background-color: #ffdd87; /* Yellow background */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Use flexbox for vertical alignment */
+      flex-direction: column; /* Align items in a column */
+      justify-content: space-between; /* Space between header and content */
+      min-height: 100vh; /* Ensure full viewport height */
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .quote {
+      font-size: 80px; /* Increased font size for 'Get set, go!' */
+      margin-bottom: 0; /* Remove bottom margin for 'Get set, go!' */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333; /* Dark text color */
+    }
+    .image-small {
+      width: 100px;
+      margin-left: 10px;
+    }
+    .text {
+      font-size: 22px;
+      line-height: 1.6;
+      text-align: center;
+      margin-top: auto; /* Align text to the bottom */
+      background-color: white; /* White background for the text area */
+      padding: 20px;
+      align-items: center;
+    }
+    .values {
+      font-size: 30px;
+      margin-top: 1px;
+      text-align: center;
+      color: #333; /* Dark text color */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="quote">
+        <p style="color: #333;">Get set, go!</p> <!-- Set color for Get set, go! -->
+        <img src="rocket-animated_1-938286163.gif" alt="Small Image" class="image-small">
+      </div>
+      <p class="values">Here are your anticipated values!</p>
+    </div>
+  </div>
+  <div class="content">
+    <img src="65-658232_at-the-movies-day6-bob-the-builder-hd-1016320605-2-removebg-preview.png" alt="Your Image" style="float:right; max-width:40%; margin-left:20px;">
+    <div class="container">
+      <div class="text">
+        <p>Your text content goes here. You can describe your predicted values, provide information, or anything else you want to display on the left side of the image.</p>
+        <p>For example:</p>
+        <ul>
+          <li>No. of bricks: 5000</li>
+          <li>Tons of sand: 10</li>
+          <li>Total estimated cost: $5000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

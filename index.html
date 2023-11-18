@@ -1,34 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bobs Esti-MATE</title>
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+}
 
+.image-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-left-image {
+    max-width: 100%;
+    height: auto;
+}
+.top-right-image-container {
+    position: fixed;
+    top: -10%;
+    left:15%;
+    right: -45%;
+    bottom: 50%;
+    transform-origin: top right; /* Set the rotation origin to the top right corner */
+    transform: rotate(4deg); /* Adjust the degree of rotation as needed */
+}
+
+.top-right-image {
+    width: 60%;
+    height: 300%;
+    height: auto;
+
+}
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bottom Left Image</title>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="login-box">
-  <h2>Bobs Esti-MATE</h2>
-  <form>
-    <div class="user-box">
-      <input type="text" name="" required="">
-      <label>No.of square feets</label>
+    <div class="image-container">
+        <img src="bob-the-builder-neil-morrissey-child-clip-art-child-thumbnail-removebg-preview.png" alt="Your Image" class="bottom-left-image">
     </div>
-    <div class="user-box">
-      <input type="text" name="" required="">
-      <label>No.of  floors</label>
+    <div class="top-right-image-container">
+        <img src="184-1848697_thought-bubble-transparent-transparent-background-speech-bubble-hd.png-removebg-preview.png" alt="Your Image" class="top-right-image">
+        
     </div>
-    <a href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      ESTIMATE
-    </a>
-  </form>
-</div>
-<!-- partial -->
-  
+    <div class="dialogue-box">
+        <form>
+          <input type="text" name="square_unit" placeholder="No. of Square unit">
+          <br>
+          <input type="text" name="floor" placeholder="No. of floor">
+        </form>
+        <img class="dialogue-img" src="dialogue-box-image.png" alt="Dialogue Box">
+      </div>
+      <div class="right_corner">
+        <img src="WhatsApp_Image_2023-11-17_at_11.46.27_PM-removebg-preview.png">
+      </div>"
 </body>
 </html>
