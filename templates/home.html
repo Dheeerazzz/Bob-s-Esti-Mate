@@ -182,23 +182,17 @@
   </div>
   <div class="bottom-center">
     <div class="login-box">
-      <form>
+      <form action="/predict" method="post">
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>No. of square feet</label>
+            <input type="text" name="sqft" required>
+            <label>No. of square feet</label>
         </div>
         <div class="user-box">
-          <input type="text" name="" required="">
-          <label>No. of floors</label>
+            <input type="text" name="floors" required>
+            <label>No. of floors</label>
         </div>
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          ESTIMATE
-        </a>
-      </form>
+        <button type="submit">ESTIMATE</button>
+    </form>
     </div>
   </div>
 </body>
