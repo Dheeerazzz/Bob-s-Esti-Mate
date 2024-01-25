@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 app = Flask(__name__)
-model = joblib.load(r"C:/Users/sriyo/Desktop/Bob's Esti-Mate/XGB.pkl")
+model = joblib.load(r"XGB.pkl")
 
 @app.route('/')
 def home():
